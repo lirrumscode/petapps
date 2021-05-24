@@ -1,0 +1,89 @@
+<ion-content>
+  <img
+    src="assets/icon/back.png"
+    alt="icon"
+    class="icon-back"
+    (click)="goBack()"
+  />
+  <div class="background"></div>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <ion-row>
+          <ion-col size="6">
+            <h1 class="title">Matilde</h1>
+            <img src="assets/icon/gender.png" alt="img" class="img-gender" />
+          </ion-col>
+          <ion-col size="6">
+            <img src="assets/icon/fav.png" alt="icon" class="icon-fav" />
+          </ion-col>
+          <ion-col size="6">
+            <p class="heading">British Shorthair</p>
+            <img src="assets/icon/city.png" alt="icon" class="icon-live" />
+          </ion-col>
+          <ion-col size="6">
+            <p class="heading-one">6 Months</p>
+            <img src="assets/icon/life.png" alt="icon" class="icon-life" />
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col size="12">
+        <p class="heading-two">
+          <ion-icon name="map-outline"></ion-icon>4140 Parker Rd. Allentown,<br />
+          New Mexico 31134
+        </p>
+      </ion-col>
+      <ion-col size="12">
+        <h2 class="title-two">Personalities</h2>
+      </ion-col>
+      <ion-col size="12">
+        <ion-row>
+          <ion-col size="3" id="containt-personalities">
+            <img
+              src="assets/icon/caracteristicas.png"
+              alt="icon"
+              class="icon-features"
+            />
+            <p class="heading-three">Playful</p>
+          </ion-col>
+          <ion-col size="3" id="containt-personalities">
+            <img src="assets/icon/inquieto.png" alt="icon" class="icon-inq" />
+            <p class="heading-three">Restless</p>
+          </ion-col>
+          <ion-col size="3" id="containt-personalities">
+            <img src="assets/icon/tierno.png" alt="icon" class="icon-cute" />
+            <p class="heading-three">Cute</p>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col size="12">
+        <h3 class="title-three">Matilde's History</h3>
+        <p class="heading-four">
+          Matilde es la mejor guarda espaldas, siempre esta hay para conversar y
+          recibirá cada día con un fuerte cariño. Fue rescatada y busco una
+          persona que le pueda dar todo el amor que ella necesita.
+        </p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<ion-footer>
+  <ion-row>
+    <ion-col size="6">
+      <ion-item lines="none" mode="ios">
+        <ion-avatar slot="start" mode="ios">
+          <img src="assets/img/profile.png" />
+        </ion-avatar>
+        <ion-label>
+          <h3>Published by:</h3>
+          <p>Juan Jesús</p>
+        </ion-label>
+      </ion-item>
+    </ion-col>
+    <ion-col size="6">
+      <ion-button shape="round" (click)="showToast()" mode="ios"
+        ><span>Contact me!</span></ion-button
+      >
+    </ion-col>
+  </ion-row>
+</ion-footer>

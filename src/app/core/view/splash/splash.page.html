@@ -1,0 +1,31 @@
+<ion-content color="secondary">
+  <div *ngIf="hide">
+    <img src="assets/img/logo.png" alt="img" class="logo" />
+  </div>
+
+  <div class="next-one" *ngIf="show">
+    <img src="assets/img/Adoptado2.png" alt="img" class="img-next" />
+    <h3 class="title-next">Found to your loyal friend</h3>
+    <p class="txt-next">
+      When you adopt a pet, wonderful things happen in your life. Yes
+      you are thinking of having a new member in your family; you're in the
+      correct place!  
+    </p>
+    <ion-button color="dark" shape="round" (click)="goNext()" class="btn-next">
+      <span>Next</span>
+    </ion-button>
+  </div>
+
+  <div class="next-one" *ngIf="show2">
+    <img src="assets/img/Adoptado.png" alt="img" class="img-next" />
+    <h3 class="title-next">Create a new history</h3>
+    <p class="txt-next">
+      Adopting can be one of the greatest experiences of your life, where
+      you will share beautiful moments with these faithful, tender, and full friends
+      of love to give away.
+    </p>
+    <ion-button color="dark" shape="round" (click)="goNextHome()" class="btn-next">
+      <span>Next</span>
+    </ion-button>
+  </div>
+</ion-content>

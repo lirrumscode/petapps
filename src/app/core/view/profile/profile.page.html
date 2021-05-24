@@ -1,0 +1,81 @@
+<ion-content color="secondary">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <h1 class="title">Profile</h1>
+        <ion-col size="12">
+          <div class="background" *ngIf="show">
+            <img
+              src="assets/img/profile.png"
+              alt="img"
+              class="img-background"
+            />
+          </div>
+          <div class="background" *ngIf="hide">
+            <img
+              src="https://www.pawtree.com/Content/images/dog-profile-icon.jpg"
+              alt="img"
+              class="img-background"
+            />
+          </div>
+          <div>
+            <p class="heading" *ngIf="show">Juan Jesús Mendez</p>
+            <p class="heading-one" *ngIf="show">Login</p>
+            <p class="heading" *ngIf="hide">
+              {{ data[0].name +' '+data[0].lastname }}
+            </p>
+            <p class="heading-one" *ngIf="hide">{{ data[0].email }}</p>
+          </div>
+        </ion-col>
+        <ion-col size="12">
+          <div *ngIf="show">
+            <form [formGroup]="formBuilder" method="POST">
+              <ion-item>
+                <ion-label position="floating">Name</ion-label>
+                <ion-input
+                  type="text"
+                  placeholder="Your name"
+                  formControlName="name"
+                ></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label position="floating">Lastname</ion-label>
+                <ion-input
+                  type="text"
+                  placeholder="Your Lastname"
+                  formControlName="lastname"
+                ></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label position="floating">E-mail</ion-label>
+                <ion-input
+                  type="email"
+                  placeholder="Your Email"
+                  formControlName="email"
+                ></ion-input>
+              </ion-item>
+              <div class="containt-button">
+                <ion-button
+                  shape="round"
+                  [disabled]="!formBuilder.valid"
+                  (click)="getData()"
+                  ><span>Login</span></ion-button
+                >
+              </div>
+            </form>
+          </div>
+
+          <div *ngIf="hide">
+            <p class="subtitle">
+              ¡Welcome SR <span>{{ data[0].name +' '+data[0].lastname }}</span>!
+            </p>
+            <p class="subtitle">
+              Is a pleasure have you today, this is your E-mail:
+              <span>{{ data[0].email }}</span> <br />of record on PetApps!
+            </p>
+          </div>
+        </ion-col>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

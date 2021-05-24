@@ -1,0 +1,57 @@
+.logo {
+  width: 45%;
+  position: absolute;
+  top: 36%;
+  left: 28%;
+  transform: translate(-50%, -50%);
+  animation: zoominout 3s infinite;
+}
+
+@keyframes zoominout {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+.img-next {
+  display: block;
+  margin: 0px auto;
+  width: 90%;
+  margin-top: 100px;
+}
+.title-next {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0px;
+  color: #000;
+  font-size: 18px;
+}
+.txt-next {
+  margin-top: 12px;
+  font-weight: 300;
+  text-align: center;
+  color: #535353;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 16px;
+  line-height: 24px;
+}
+.btn-next {
+  display: block;
+  margin: 0px auto;
+  width: 80%;
+  height: 45px;
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  span {
+    font-weight: bold;
+    text-align: center;
+  }
+}
