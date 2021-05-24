@@ -1,7 +1,7 @@
 # PetApps
 
 _This little project is about a serie of projects for the company **LeonidasEsteban** for the role:
-> **Frontend web developer.** and this is inspiration of the project:
+> **Frontend web developer,** and it's inspire in the project:
 <br>
 <img src="https://platform-api-production.s3.amazonaws.com/projects/thumbs/71fbbe23-f570-45cb-8e6d-32fcd0fa6f49/Thumbnail-Adopcion.jpg" alt="img">
 <br>
