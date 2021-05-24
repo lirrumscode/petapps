@@ -28,6 +28,9 @@ ionic serve --external
 - [DogAPi's](https://dog.ceo/)
 - [SCSS](https://sass-lang.com/) 
 
+## Deploy 💻 :
+http://petapps.web.app/
+
 ## Authors ✒️
 
 - **Lina Castro** - _Frontend and backend Developer_ - [lirrums](https://github.com/lirrumscode)
