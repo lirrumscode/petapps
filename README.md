@@ -31,7 +31,7 @@ ionic serve --external
 - [DogAPi's](https://dog.ceo/)
 - [SCSS](https://sass-lang.com/) 
 
-## Deploy 💻 :
+## Deploy 💻 
 http://petapps.web.app/
 
 ## Authors ✒️
